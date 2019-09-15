@@ -6,17 +6,14 @@
   <meta name="keywords" content=" AboutLife ">
   <meta name="description" content="2019-09-01-第一天使用GitHub IO | N00000000B&#39;s Document Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="主要的分类为 1   2   3">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://skywalker1997.github.io/categories/index.html">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="https://skywalker1997.github.io/tags/index.html">
 <meta property="og:site_name" content="N00000000B&#39;s Document Blog">
-<meta property="og:description" content="主要的分类为 1   2   3">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T09:24:05.163Z">
+<meta property="og:updated_time" content="2019-09-09T05:03:23.407Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="主要的分类为 1   2   3">
+<meta name="twitter:title" content="标签">
 
 
 <link rel="icon" href="/img/PINKFLOYD.jpeg">
@@ -139,6 +136,14 @@
     
         
             
+            <li><div data-rel="随笔">随笔<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="信息安全">信息安全<small>(1)</small></div>
                 
             </li>
@@ -155,7 +160,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="4">
-<input type="hidden" id="yelog_site_word_count" value="766">
+<input type="hidden" id="yelog_site_word_count" value="1.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -193,6 +198,10 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">日常生活</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a href="javascript:" class="color1">Web安全</a>
     </li>
     
@@ -214,12 +223,12 @@
             <span class="post-date" title="2019-09-01 19:43:13">2019/09/01</span>
         </a>
         
-        <a  class=""
-           href="/uncategorized/2019-09-11-今日随想"
-           data-tag=""
+        <a  class="随笔 "
+           href="/essay/2019-09-11-今日随想"
+           data-tag="日常生活"
            data-author="" >
-            <span class="post-title" title="2019-09-11-今日随想">2019-09-11-今日随想</span>
-            <span class="post-date" title="2019-09-11 13:19:46">2019/09/11</span>
+            <span class="post-title" title="2019-09-15-今日随想">2019-09-15-今日随想</span>
+            <span class="post-date" title="2019-09-15 22:25:46">2019/09/15</span>
         </a>
         
         <a  class="信息安全 "
@@ -393,7 +402,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#AboutLife','#Web安全','#SQLI-Lab',],
+            'data': ['#AboutLife','#日常生活','#Web安全','#SQLI-Lab',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>N00000000B&#39;s Document Blog</title>
-  <meta name="keywords" content>
-  <meta name="description" content="N00000000B&#39;s Document Blog">
+  <title>2019-09-15-今日随想 | N00000000B&#39;s Document Blog</title>
+  <meta name="keywords" content=" 日常生活 ">
+  <meta name="description" content="2019-09-15-今日随想 | N00000000B&#39;s Document Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -49,7 +49,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/PINKFLOYD.jpeg" />
@@ -257,12 +257,57 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-2019-09-11-今日随想" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一个关于N00000000B的博客"><span class="toc-text">这是一个关于N00000000B的博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#写一些什么"><span class="toc-text">写一些什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于本站的其他信息"><span class="toc-text">关于本站的其他信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">2019-09-15-今日随想</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" data-rel="随笔">随笔</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color5">日常生活</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-09-15 22:36:29'>2019-09-15 22:25</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:326</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
     
 <style>
     .left-col .switch-btn,
@@ -275,35 +320,50 @@
     }
 </style>
 </div>
-            <h1 id="这是一个关于N00000000B的博客"><a href="#这是一个关于N00000000B的博客" class="headerlink" title="这是一个关于N00000000B的博客"></a>这是一个关于N00000000B的博客</h1><h2 id="写一些什么"><a href="#写一些什么" class="headerlink" title="写一些什么"></a>写一些什么</h2><p>本博客主要记录以下几个方面的内容</p>
-<blockquote>
-<p>关于信息安全相关技术的笔记。  </p>
-</blockquote>
-<blockquote>
-<p>关于机器学习&amp;深度学习的笔记</p>
-</blockquote>
-<blockquote>
-<p>关于安全类型论文以及机器&amp;深度学习类论文的笔记</p>
-</blockquote>
-<blockquote>
-<p>个人随笔</p>
-</blockquote>
-<h2 id="关于本站的其他信息"><a href="#关于本站的其他信息" class="headerlink" title="关于本站的其他信息"></a>关于本站的其他信息</h2><p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天学校里来了一堆“明星”拍所谓的MV，教一门口蹲了一大堆女生，我估计很多甚至都不是GKD的学生。还有很多拿着一个笔记本，穿着拖鞋的口角大汉。我感觉这些应该是要拿着笔记本找明星签名的。这些人可能是靠着所谓的粉丝经济在活着。</p>
+<p>坐在图书管理还不时的有人在外面发出欢呼的声音。很多来自习的同学听说被挡在了门外。</p>
+<p>两个问题：</p>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li>GKD这是恰烂钱还是所谓的“任务”</li>
+<li>今天娱乐圈的粗制滥造和大众流行审美的下降是否是因为所谓的粉丝经济</li>
 </ul>
+<p>GKD恰烂钱的其他例子目前还是举不出来，所以无法从外部断定是否是因为给了很多钱所以来到了学校里面拍摄。<br>而所谓“任务”，我觉得可能性更大一些。但为何不是P大和T大，在城里很方便。这就不得而知了。我个人倾向于P大和T大还是有风骨的，而GKD目前还没有这个“风骨”</p>
+<p>第二个问题的根源还是——情怀资本vs纯资本<br>有时间可以谈谈根源问题</p>
 
-        </article>
-        
-        <p>
-            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1004268134@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>2019-09-15-今日随想</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">326</span></p>
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="N00000000B">N00000000B</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-09-15, 22:25:46</p>
+    <p><span class="copy-title">最后更新:</span>2019-09-15, 22:36:29</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/essay/2019-09-11-今日随想" title="2019-09-15-今日随想">https://skywalker1997.github.io/essay/2019-09-11-今日随想</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2019 skywalker1997</p>
