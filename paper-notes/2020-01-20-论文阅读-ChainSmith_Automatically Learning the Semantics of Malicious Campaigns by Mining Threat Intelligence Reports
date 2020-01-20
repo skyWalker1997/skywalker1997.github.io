@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>标签 | N00000000B&#39;s Document Blog</title>
-  <meta name="keywords" content>
-  <meta name="description" content="标签 | N00000000B&#39;s Document Blog">
+  <title>2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports | N00000000B&#39;s Document Blog</title>
+  <meta name="keywords" content=" 自然语言处理 , 威胁情报 ">
+  <meta name="description" content="2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports | N00000000B&#39;s Document Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于本人有时间再说吧">
 <meta property="og:type" content="website">
@@ -286,24 +286,38 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">标签</h1>
+        <h1 class="article-title">2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a href="javascript:" data-rel="论文记录">论文记录</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color2">自然语言处理</a>
+            
+            <a href="javascript:" class="color5">威胁情报</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-09 13:03:23'>2019-09-09 13:02</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-20 11:33:30'>2020-01-20 11:29</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:0</span>
+        <span>字数:558</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -322,7 +336,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ChainSmith-Automatically-Learning-the-Semantics-of-Malicious-Campaigns-by-Mining-Threat-Intelligence-Reports"><span class="toc-text">ChainSmith: Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Method-——-ChainSmith"><span class="toc-text">Method —— ChainSmith</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Insights-into-malware-delivery-campaigns"><span class="toc-text">4. Insights into malware delivery campaigns</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -337,7 +351,54 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="ChainSmith-Automatically-Learning-the-Semantics-of-Malicious-Campaigns-by-Mining-Threat-Intelligence-Reports"><a href="#ChainSmith-Automatically-Learning-the-Semantics-of-Malicious-Campaigns-by-Mining-Threat-Intelligence-Reports" class="headerlink" title="ChainSmith: Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports"></a>ChainSmith: Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><ul>
+<li>安全相关文本挖掘工作<ul>
+<li>Featuresmith: Automatically engineering features for malware detection by mining the security （CCS）</li>
+<li>Toward automatic generation and analysis of in- dicators of compromise (iocs) using convolutional neural network（博士毕业论文）</li>
+</ul>
+</li>
+<li>主要针对IOC在安全相关文本中的角色，比如属于哪个阶段。文中定义了 4个阶段，baiting，exploitation，installation，C&amp;C</li>
+<li>使用了Symantec’s WINE platform的外部情报来对IOC的信息进行补充</li>
+</ul>
+<h2 id="Method-——-ChainSmith"><a href="#Method-——-ChainSmith" class="headerlink" title="Method —— ChainSmith"></a>Method —— ChainSmith</h2><ul>
+<li>Article Crawler<ul>
+<li>爬取多个网站和长时间跨度的文章</li>
+</ul>
+</li>
+<li>Expression detector <ul>
+<li>The intuition behind this method is that the joint probability of words is much higher than the product of the probability of individual words for multi-word expression. （用于识别特殊的安全词汇，比如“Black Hole”）</li>
+</ul>
+</li>
+<li>Syntactic parser<ul>
+<li>Python NLTK and Stanford CoreNLP</li>
+</ul>
+</li>
+<li>Semantic parser<ul>
+<li>word2vec</li>
+<li>ChainSmith uses dependency-based word embedding</li>
+</ul>
+</li>
+<li>Named entity recognition<ul>
+<li>基于规则匹配：URL，IPV4，hash，family，EK，vuln</li>
+</ul>
+</li>
+<li>IOC Classifier<ul>
+<li>Instead of applying a softmax layer to the output layer, we use a logistic function to scale the output probability, such that the sum of the probabilities is not necessarily to be 1.</li>
+<li>To reduce the false positive rate, we add a special label “malicious” as another output, for the case when the classifier returns more than one label from a single sentence. </li>
+</ul>
+</li>
+<li>Campaign group identification<ul>
+<li>If two campaigns contain identical IOCs and appear within a short time frame of another, then we consider that they are in fact the same campaign.</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-Insights-into-malware-delivery-campaigns"><a href="#4-Insights-into-malware-delivery-campaigns" class="headerlink" title="4. Insights into malware delivery campaigns"></a>4. Insights into malware delivery campaigns</h2><ul>
+<li><p>这部分和NLP关系不大，说了模型的效果，社工方法诱骗用户下载，以及分析了所谓样本供应商和使用者的关系。但4.3后面和4.4中提到的非结构化数据和赛门铁克 WINE平台数据关联以及IOC与Campaign之间的联系，可以参考。</p>
+<p>I am a Ph.D. candidate of the Chinese Academy of Sciences.  My research direction is NLP.  Last term I participated in a NLP class and I also watched video of Stanford NLP course CS224n.  I interested in NER and text classify assignments so I need some text data to practice.  I used twitter to read some tweets about English Premier League news and I want to practice some NLP technology on sports related text processing such as extract players’ name, clubs’s name and mayber some transfer relation between two clubs  </p>
+</li>
+</ul>
+<p>My work is aiming to complete NER and text classify assignments. So the only thing I need is the tweet text(I would find a set of users about the English Premier League and find some APIs which could return tweets about it) and then find a way to filter out all of the tweets about transfer news.  I will use those transfer-related tweets to do NLP work.</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1004268134@qq.com </span>
     </div>
@@ -348,6 +409,18 @@
     <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
 </p>
 
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">558</span></p>
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="N00000000B">N00000000B</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-01-20, 11:29:13</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-20, 11:33:30</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/paper-notes/2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports" title="2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports">https://skywalker1997.github.io/paper-notes/2020-01-20-论文阅读-ChainSmith_Automatically Learning the Semantics of Malicious Campaigns by Mining Threat Intelligence Reports</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
 
 
 
